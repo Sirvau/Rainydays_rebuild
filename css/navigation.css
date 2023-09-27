@@ -46,18 +46,22 @@
   margin: auto;
 }
 
-.menuIcon,
-.closeIcon,
-li {
-  font-size: 28px;
-}
-
-li {
-  padding: 10px 15px;
-}
-
-a {
+.menu li a {
   text-decoration: none;
+  font-size: 25px;
+}
+
+.menu li a:hover {
+  color: rgba(97, 104, 52, 1);
+}
+
+li {
+  padding: 20px 50px;
+}
+
+.menuIcon,
+.closeIcon {
+  font-size: 28px;
 }
 
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/
