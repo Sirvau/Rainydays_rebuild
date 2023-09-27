@@ -40,7 +40,7 @@
 
 .logo {
   padding-top: 20px;
-  padding-left: 30px;
+  padding-left: 60px;
   max-width: 250px;
   width: 100%;
   margin: auto;
@@ -61,23 +61,96 @@ li {
 
 .menuIcon,
 .closeIcon {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 480px) {
   .logo {
     max-width: 300px;
-    padding-left: 50px;
+    padding-left: 70px;
+  }
+
+  .menu li a {
+    font-size: 28px;
+  }
+
+  .menuIcon,
+  .closeIcon {
+    font-size: 32px;
   }
 }
 
 @media screen and (min-width: 540px) {
+  .logo {
+    max-width: 320px;
+    padding-left: 80px;
+  }
+
+  .menu li a {
+    font-size: 30px;
+  }
+
+  .menuIcon,
+  .closeIcon {
+    font-size: 34px;
+  }
 }
+
 @media screen and (min-width: 600px) {
+  .logo {
+    padding-top: auto;
+    padding-left: 10px;
+    max-width: 220px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: none;
+    transition: none;
+    border-style: hidden;
+    padding-left: 0px;
+  }
+
+  .menu li {
+    padding: 25px;
+  }
+
+  .menu li a {
+    font-size: 25px;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #navigation_icons {
+    display: inline-block;
+    padding: 20px;
+    font-size: 22px;
+  }
+
+  .fa-magnifying-glass,
+  .fa-bag-shopping {
+    padding: 10px;
+  }
+
+  #searchbar {
+    font-size: 12px;
+  }
 }
+
+/* Tablet size ----------------------------------------------------------------------------------------------*/
+
 @media screen and (min-width: 768px) {
 }
+
 @media screen and (min-width: 880px) {
 }
 @media screen and (min-width: 1024px) {

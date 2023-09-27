@@ -17,3 +17,32 @@ function toggleMenu() {
 }
 
 hamburger.addEventListener("click", toggleMenu);
+
+
+
+
+
+function hideHamburgerMenuOnLargeScreens() {
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu");
+  
+    function checkScreenWidth() {
+      if (window.innerWidth > 599) {
+        // Hide the hamburger menu
+        menu.classList.remove("showMenu");
+        hamburger.style.display = "none";
+      } else {
+        // Show the hamburger menu
+        hamburger.style.display = "block";
+      }
+    }
+  
+    // Initial check
+    checkScreenWidth();
+  
+    // Listen for window resize events
+    window.addEventListener("resize", checkScreenWidth);
+  }
+  
+  // Call the function to hide the hamburger menu on large screens
+  hideHamburgerMenuOnLargeScreens();
