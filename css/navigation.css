@@ -16,12 +16,12 @@
 
 .menu {
   position: fixed;
-  transform: translateY(-150%);
+  transform: translateY(-200%);
   transition: transform 0.2s;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 540px;
+  bottom: auto;
   z-index: 99;
   background: rgba(5, 19, 30, 1);
   border: rgba(205, 208, 212, 1) solid 1px;
@@ -39,14 +39,21 @@
 }
 
 .logo {
-  max-width: 200px;
+  padding-top: 20px;
+  padding-left: 30px;
+  max-width: 250px;
   width: 100%;
   margin: auto;
 }
 
+.menuIcon,
+.closeIcon,
 li {
-  padding: 10px;
-  font-size: 20px;
+  font-size: 28px;
+}
+
+li {
+  padding: 10px 15px;
 }
 
 a {
@@ -56,18 +63,8 @@ a {
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 480px) {
   .logo {
-    max-width: 250px;
+    max-width: 300px;
     padding-left: 50px;
-  }
-
-  .menuIcon,
-  .closeIcon,
-  li {
-    font-size: 28px;
-  }
-
-  .menu {
-    bottom: 480px;
   }
 }
 
