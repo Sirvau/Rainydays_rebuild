@@ -36,6 +36,14 @@ main {
   font-family: "Montserrat", "sans-serif", "verdana";
 }
 
+.background_images {
+  height: 90vh;
+  width: 100%;
+  background-position: auto right 0%;
+  background-size: cover;
+  padding: 0 8px;
+}
+
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 480px) {
 }

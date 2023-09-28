@@ -1,3 +1,18 @@
+#reseption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.reseption_image {
+  background-image: url(../images/index_ice_climbing.jpg);
+}
+
+.reseption_text {
+  text-align: center;
+}
+
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 480px) {
 }
