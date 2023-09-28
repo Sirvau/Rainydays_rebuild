@@ -19,9 +19,6 @@ function toggleMenu() {
 hamburger.addEventListener("click", toggleMenu);
 
 
-
-
-
 function hideHamburgerMenuOnLargeScreens() {
     const hamburger = document.querySelector(".hamburger");
     const menu = document.querySelector(".menu");
@@ -34,15 +31,16 @@ function hideHamburgerMenuOnLargeScreens() {
       } else {
         // Show the hamburger menu
         hamburger.style.display = "block";
+        shoppingBagText.style.display = "flex;"
       }
     }
   
-    // Initial check
     checkScreenWidth();
   
-    // Listen for window resize events
     window.addEventListener("resize", checkScreenWidth);
   }
   
-  // Call the function to hide the hamburger menu on large screens
   hideHamburgerMenuOnLargeScreens();
+
+
+  
