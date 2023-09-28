@@ -1,4 +1,5 @@
-#reseption {
+#reseption,
+#call_to_action {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,10 +8,23 @@
 
 .reseption_image {
   background-image: url(../images/index_ice_climbing.jpg);
+  height: 90vh;
 }
 
 .reseption_text {
   text-align: center;
+}
+
+.cta_image {
+  background-image: url(../images/index_man_on_mountain.jpg);
+  height: 35vh;
+}
+
+.cta_button {
+  border-radius: 6px;
+  padding: 4% 8%;
+  margin: 10px;
+  font-size: 20px;
 }
 
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/

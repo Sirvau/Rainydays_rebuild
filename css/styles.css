@@ -27,7 +27,8 @@ body {
   color: rgba(205, 208, 212, 1);
 }
 
-header a {
+header a,
+button {
   font-family: "Bebas Neue", "sans-serif", "verdana";
   color: rgba(205, 208, 212, 1);
 }
@@ -37,11 +38,19 @@ main {
 }
 
 .background_images {
-  height: 90vh;
   width: 100%;
-  background-position: auto right 0%;
   background-size: cover;
-  padding: 0 8px;
+}
+
+.button {
+  background-color: rgba(167, 70, 46, 1);
+  border: solid #82331f;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.cta_button:hover {
+  background-color: #e36242;
 }
 
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/

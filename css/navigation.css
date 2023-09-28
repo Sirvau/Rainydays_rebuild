@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-.closeIcon {
+#closeIcon {
   display: none;
 }
 
@@ -58,8 +58,8 @@
 }
 
 .menu li a:hover,
-.menuIcon:hover,
-.closeIcon:hover {
+#menuIcon:hover,
+#closeIcon:hover {
   color: rgba(97, 104, 52, 1);
 }
 
@@ -81,8 +81,8 @@ li {
   padding: 5px 50px;
 }
 
-.menuIcon,
-.closeIcon {
+#menuIcon,
+#closeIcon {
   font-size: 30px;
 }
 
@@ -97,8 +97,8 @@ li {
     font-size: 28px;
   }
 
-  .menuIcon,
-  .closeIcon {
+  #menuIcon,
+  #closeIcon {
     font-size: 32px;
   }
 }
@@ -113,15 +113,14 @@ li {
     font-size: 30px;
   }
 
-  .menuIcon,
-  .closeIcon {
+  #menuIcon,
+  #closeIcon {
     font-size: 34px;
   }
 }
 
 @media screen and (min-width: 600px) {
   .logo {
-    padding-top: auto;
     padding-left: 10px;
     max-width: 180px;
   }

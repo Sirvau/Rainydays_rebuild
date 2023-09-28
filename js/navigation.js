@@ -1,8 +1,8 @@
 const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
+const menuItems = document.querySelectorAll("#menuItem");
 const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
+const closeIcon= document.querySelector("#closeIcon");
+const menuIcon = document.querySelector("#menuIcon");
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
@@ -31,7 +31,6 @@ function hideHamburgerMenuOnLargeScreens() {
       } else {
         // Show the hamburger menu
         hamburger.style.display = "block";
-        shoppingBagText.style.display = "flex;"
       }
     }
   
