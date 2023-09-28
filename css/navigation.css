@@ -50,9 +50,12 @@
   text-decoration: none;
   font-size: 25px;
   letter-spacing: 2px;
+  transition: 0.3s ease;
 }
 
-.menu li a:hover {
+.menu li a:hover,
+.menuIcon:hover,
+.closeIcon:hover {
   color: rgba(97, 104, 52, 1);
 }
 
