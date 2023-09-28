@@ -11,8 +11,11 @@
   height: 90vh;
 }
 
-.reseption_text {
+.reseption_text,
+.cta_text,
+.sale_headline {
   text-align: center;
+  line-height: 30px;
 }
 
 .cta_image {
@@ -25,6 +28,11 @@
   padding: 4% 8%;
   margin: 10px;
   font-size: 20px;
+}
+
+.sale_headline {
+  padding: 50px 0px 20px;
+  box-shadow: 0px 1px rgba(205, 208, 212, 0.081);
 }
 
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/
