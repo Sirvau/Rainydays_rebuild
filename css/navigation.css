@@ -24,7 +24,7 @@
   bottom: auto;
   z-index: 99;
   background: rgba(5, 19, 30, 0.942);
-  border: rgba(205, 208, 212, 1) dotted 1px;
+  border: rgba(5, 19, 30, 0.942) dotted 1px;
   color: rgba(205, 208, 212, 1);
   list-style: none;
   padding-top: 30px;
