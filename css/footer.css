@@ -1,16 +1,11 @@
 footer {
   background-color: rgba(205, 208, 212, 0.038);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.5px;
   padding: 30px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.footer_soMe_icons_copyright a {
-  text-decoration: none;
-  color: rgba(205, 208, 212, 1);
 }
 
 .contactinfo_text,
@@ -23,20 +18,31 @@ footer {
   padding-top: 20px;
   font-size: 16px;
   padding-left: 15px;
+  text-decoration: none;
+  color: rgba(205, 208, 212, 1);
 }
 
 .contactinfo_text {
-  padding-top: 13px;
+  padding-top: 12px;
+  padding-left: 6px;
 }
 
 .footer_soMe_icons_copyright {
   align-self: flex-end;
 }
 
+.fa-instagram,
+.fa-facebook {
+  font-size: 26px;
+}
+
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 480px) {
 }
 @media screen and (min-width: 540px) {
+  footer {
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 600px) {
 }
