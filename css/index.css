@@ -8,7 +8,7 @@
 
 .reseption_image {
   background-image: url(../images/index_reseption_image_copy.jpg);
-  height: 50vh;
+  height: 60vh;
 }
 
 .reseption_text,
@@ -20,7 +20,7 @@
 
 .cta_image {
   background-image: url(../images/index_cta_image.jpg);
-  height: 30vh;
+  height: 40vh;
 }
 
 .cta_button {
