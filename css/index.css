@@ -7,8 +7,8 @@
 }
 
 .reseption_image {
-  background-image: url(../images/index_ice_climbing.jpg);
-  height: 90vh;
+  background-image: url(../images/index_reseption_image_copy.jpg);
+  height: 50vh;
 }
 
 .reseption_text,
@@ -19,8 +19,8 @@
 }
 
 .cta_image {
-  background-image: url(../images/index_man_on_mountain.jpg);
-  height: 35vh;
+  background-image: url(../images/index_cta_image.jpg);
+  height: 30vh;
 }
 
 .cta_button {
