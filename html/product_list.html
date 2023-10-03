@@ -17,8 +17,12 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script defer src="../js/api.js" type="module"></script>
+    <script defer src="../js/display_message.js" type="module"></script>
+    <script defer src="../js/styles.js" type="module"></script>
     <script defer src="../js/navigation.js" type="module"></script>
-    <link rel="import" href="../html/common_resources.html" />
+    <script defer src="../js/product_list.js" type="module"></script>
+
     <link href="../css/styles.css" rel="stylesheet" />
     <link href="../css/navigation.css" rel="stylesheet" />
     <link href="../css/footer.css" rel="stylesheet" />
@@ -58,7 +62,11 @@
         </button>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="wrapper">
+        <div id="jackets_container"></div>
+      </div>
+    </main>
     <footer>
       <div class="footer_container">
         <div class="contact_info">
