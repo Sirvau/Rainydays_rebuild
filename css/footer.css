@@ -1,6 +1,6 @@
 footer {
   background-color: rgba(205, 208, 212, 0.038);
-
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
