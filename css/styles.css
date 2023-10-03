@@ -34,7 +34,8 @@ button {
 }
 
 main,
-footer {
+footer,
+.copyright {
   font-family: "Montserrat", "sans-serif", "verdana";
 }
 
