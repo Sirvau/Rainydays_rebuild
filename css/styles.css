@@ -33,7 +33,8 @@ body {
 
 header a,
 button,
-.product_price {
+.product_price,
+h1 {
   font-family: "Bebas Neue", "sans-serif", "verdana";
   color: rgba(205, 208, 212, 1);
 }

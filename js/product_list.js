@@ -24,7 +24,7 @@ async function displayProducts(){
         image.src = jacket.image;
         image.alt = jacket.description;
 
-        const jacketTitle = document.createElement("p");
+        const jacketTitle = document.createElement("h2");
         jacketTitle.classList.add("product_name");
         jacketTitle.innerHTML = `${jacket.title}`
 
@@ -40,7 +40,7 @@ async function displayProducts(){
         });
 
         if (jacket.onSale) {
-            jacketPrice.innerHTML = `<span class="jacketSale">${jacket.discountedPrice} </span><span class="product_price on_sale">${jacket.price} </span>`;
+            jacketPrice.innerHTML = `<span class="jacketSale">$ ${jacket.discountedPrice} </span><span class="product_price on_sale">$ ${jacket.price} </span>`;
             }
 
             

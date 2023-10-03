@@ -1,3 +1,22 @@
+h1,
+h2,
+.button_link,
+.product_price {
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 100px;
+  color: rgba(205, 208, 212, 0.489);
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 30px;
+}
+
 #jackets_container {
   display: flex;
   flex-direction: column;
@@ -24,17 +43,24 @@
 
 .on_sale {
   text-decoration: line-through;
+  padding-left: 20px;
+  color: slategrey;
 }
 
 .button_link {
   color: rgba(205, 208, 212, 1);
   text-decoration: none;
-  letter-spacing: 2px;
 }
 
-.button_link,
+.button_link {
+  font-size: 20px;
+}
+
+.product_name {
+  margin-top: 50px;
+}
 .product_price {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/
