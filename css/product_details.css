@@ -1,7 +1,25 @@
 .product_detail_image {
-  max-width: 100%;
   height: 40vh;
-  filter: opacity(70%);
+  filter: opacity(80%);
+}
+
+.product_name {
+  font-family: "Montserrat", "sans-serif", "verdana";
+  font-size: 20px;
+}
+
+.product_description {
+}
+
+.product_price {
+  font-size: 40px;
+}
+
+.add_to_bag {
+  border-radius: 6px;
+  padding: 15px 40px;
+  margin: 70px 10px;
+  font-size: 20px;
 }
 
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/

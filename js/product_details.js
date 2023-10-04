@@ -39,35 +39,37 @@ async function fetchJacketDetail() {
         }
         const jacketDetail = await response.json();
 
+
+
         const mainContainer = document.querySelector(".product_page");
+        const singleJacketContainer = document.querySelector(".single_jacket_container");
 
-        const singleJacketContainer = document.createElement("div");
-        singleJacketContainer.classList.add("single_jacket_container");
 
-        const image = document.createElement("img");
-        image.classList.add("product_detail_image")
-        image.src = jacketDetail.image;
-        image.alt = jacketDetail.description;
+        const productDetailImage = document.querySelector(".product_detail_image");
+        productDetailImage.src = jacketDetail.image;
+        productDetailImage.alt = jacketDetail.description;
 
-        const titleOfJacket = document.createElement("p");
-        titleOfJacket.classList.add("product_name");
+        const titleOfJacket = document.querySelector(".product_name");
         titleOfJacket.innerHTML = `${jacketDetail.title}`;
 
-        const descriptionOfJacket = document.createElement("p");
-        descriptionOfJacket.classList.add("product_name");
+        const descriptionOfJacket = document.querySelector(".product_description");
         descriptionOfJacket.innerHTML = `${jacketDetail.description}`;
 
-        const priceOfJacket = document.createElement("p");
-        priceOfJacket.classList.add("product_price");
+        const priceOfJacket = document.querySelector(".product_price");
         priceOfJacket.innerHTML = `<span class="product_price">$${jacketDetail.price}</span>`;
-        
-        const button = document.createElement("a");
-        button.classList.add("button_large")
-        button.href = "`/shoppingbag.html;" 
+
+       
+        const button = document.querySelector(".add_to_bag");
+        button.href = "`/html/shoppingbag.html;" 
         button.textContent = "Add to bag";
 
+        button.addEventListener("click", () => {
+            window.location.href=`/html/shoppingbag.html`;
+        });
+        
+
             mainContainer.appendChild(singleJacketContainer);
-            singleJacketContainer.appendChild(image);
+            singleJacketContainer.appendChild(productDetailImage);
             singleJacketContainer.appendChild(titleOfJacket);
             singleJacketContainer.appendChild(descriptionOfJacket);
             singleJacketContainer.appendChild(priceOfJacket);
@@ -81,3 +83,5 @@ async function fetchJacketDetail() {
 }
 
 fetchJacketDetail()
+
+
