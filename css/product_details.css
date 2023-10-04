@@ -1,5 +1,5 @@
 .product_detail_image {
-  height: 45vh;
+  height: 50vh;
   filter: opacity(80%);
 }
 
@@ -22,7 +22,7 @@
 .product_page {
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 70px;
   justify-content: center;
 }
 
