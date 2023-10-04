@@ -2,15 +2,6 @@ import {showError} from "./display_message.js";
 
 
 
-
-
-function getJacketTitleFromQuery() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const title = urlParams.get("title");
-    return title;
-}
-
-
 function getJacketIdFromQuery() {
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get("id");
@@ -18,7 +9,7 @@ function getJacketIdFromQuery() {
 }
 
 const jacketId = getJacketIdFromQuery();
-const jacketTitle = getJacketTitleFromQuery();
+
 
 
 
@@ -41,10 +32,6 @@ async function fetchJacketDetail() {
 
 
 
-        const mainContainer = document.querySelector(".product_page");
-        const singleJacketContainer = document.querySelector(".single_jacket_container");
-
-
         const productDetailImage = document.querySelector(".product_detail_image");
         productDetailImage.src = jacketDetail.image;
         productDetailImage.alt = jacketDetail.description;
@@ -58,22 +45,21 @@ async function fetchJacketDetail() {
         const priceOfJacket = document.querySelector(".product_price");
         priceOfJacket.innerHTML = `<span class="product_price">$${jacketDetail.price}</span>`;
 
-       
+        const sizesArray = jacketDetail.sizes;
+        const selectElement = document.getElementById("select_size");
+        sizesArray.forEach(size => {
+        const option = document.createElement("option");
+        option.value = size;
+        option.textContent = size;
+        selectElement.appendChild(option);
+})
         const button = document.querySelector(".add_to_bag");
-        button.href = "`/html/shoppingbag.html;" 
+        button.href = "/html/shoppingbag.html;"
         button.textContent = "Add to bag";
 
         button.addEventListener("click", () => {
-            window.location.href=`/html/shoppingbag.html`;
+            window.location.href="/html/shoppingbag.html";
         });
-        
-
-            mainContainer.appendChild(singleJacketContainer);
-            singleJacketContainer.appendChild(productDetailImage);
-            singleJacketContainer.appendChild(titleOfJacket);
-            singleJacketContainer.appendChild(descriptionOfJacket);
-            singleJacketContainer.appendChild(priceOfJacket);
-            singleJacketContainer.appendChild(button);
 
     }
     catch (error) {

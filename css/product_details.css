@@ -1,14 +1,11 @@
 .product_detail_image {
-  height: 40vh;
+  height: 45vh;
   filter: opacity(80%);
 }
 
 .product_name {
   font-family: "Montserrat", "sans-serif", "verdana";
   font-size: 20px;
-}
-
-.product_description {
 }
 
 .product_price {
@@ -20,6 +17,38 @@
   padding: 15px 40px;
   margin: 70px 10px;
   font-size: 20px;
+}
+
+.product_page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  justify-content: center;
+}
+
+.single_product_details {
+  text-align: center;
+}
+
+.select_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#select_size,
+#quantity {
+  background-color: rgba(5, 19, 30, 1);
+  border: 1px solid rgba(205, 208, 212, 1);
+  border-radius: 6px;
+  font-size: 16px;
+  color: rgba(205, 208, 212, 1);
+  height: 5vh;
+  text-align: center;
+}
+
+#quantity {
+  max-width: 50px;
+  height: 4.5vh;
 }
 
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/
