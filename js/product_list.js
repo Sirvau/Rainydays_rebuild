@@ -31,7 +31,7 @@ async function displayProducts(){
         const jacketPrice = document.createElement("p");
         jacketPrice.classList.add("product_price");
 
-        jacketPrice.innerHTML = `<span class="product_price">$${jacket.price}</span>`;
+        jacketPrice.innerHTML = `<span class="product_price">$  ${jacket.price}</span>`;
 
         const jacketDetails = document.createElement("a");
         jacketDetails.classList.add("jacketDetails");

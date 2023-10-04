@@ -1,50 +1,90 @@
-.product_detail_image {
-  height: 50vh;
-  filter: opacity(80%);
-}
-
-.product_name {
-  font-family: "Montserrat", "sans-serif", "verdana";
-  font-size: 20px;
-}
-
-.product_price {
-  font-size: 40px;
-}
-
-.add_to_bag {
-  border-radius: 6px;
-  padding: 15px 40px;
-  margin: 70px 10px;
-  font-size: 20px;
-}
-
+/* Sections & containers ------------------------------------------------------------------------------------*/
 .product_page {
   display: flex;
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 50px;
   justify-content: center;
 }
 
 .single_product_details {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
 .select_container {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+/* Product ------------------------------------------------------------------------------------*/
+
+.product_detail_image {
+  height: 50vh;
+  filter: opacity(80%);
+  margin-top: 20px;
+}
+
+.product_name {
+  font-family: "Montserrat", "sans-serif", "verdana";
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: auto;
+  line-height: 40px;
+}
+
+.product_description {
+  text-align: left;
+}
+
+.product_price {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+.add_to_bag {
+  border-radius: 6px;
+  padding: 20px 64px;
+  margin-top: 80px;
+
+  font-size: 25px;
+  align-self: center;
 }
 
 #select_size,
 #quantity {
   background-color: rgba(5, 19, 30, 1);
-  border: 1px solid rgba(205, 208, 212, 1);
+  border: 2px solid rgba(205, 208, 212, 0.081);
   border-radius: 6px;
   font-size: 16px;
   color: rgba(205, 208, 212, 1);
   text-align: center;
   width: 80px;
-  height: 60px;
+  height: 55px;
+}
+
+label {
+  display: none;
+}
+
+/* Icons --------------------------------------------------------------------------------------*/
+
+.icons {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(205, 208, 212, 0.081);
+}
+
+.fa-droplet,
+.fa-person-hiking,
+.fa-wind {
+  padding-left: 20px;
+  font-size: 20px;
+  color: slategrey;
 }
 
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/
