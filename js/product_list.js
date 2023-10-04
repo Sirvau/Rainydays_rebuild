@@ -36,7 +36,7 @@ async function displayProducts(){
         const jacketDetails = document.createElement("a");
         jacketDetails.classList.add("jacketDetails");
         jacketDetails.addEventListener("click", () => {
-        window.location.href = `product_details.html?id=${jacket.id}&title=${jacket.title}`;            
+        window.location.href = `../html/product_details.html?id=${jacket.id}&title=${jacket.title}`;            
         });
 
         if (jacket.onSale) {
