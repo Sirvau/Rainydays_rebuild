@@ -1,6 +1,5 @@
 h1,
 h2,
-.button_link,
 .product_price {
   letter-spacing: 2px;
 }
@@ -38,7 +37,7 @@ h2 {
 
 .small {
   border-radius: 4px;
-  padding: 4px 12px;
+  padding: 8px 20px;
 }
 
 .on_sale {
@@ -50,10 +49,8 @@ h2 {
 .button_link {
   color: rgba(205, 208, 212, 1);
   text-decoration: none;
-}
-
-.button_link {
-  font-size: 20px;
+  font-size: 22px;
+  letter-spacing: 4px;
 }
 
 .product_name {
