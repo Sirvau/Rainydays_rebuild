@@ -1,6 +1,6 @@
 footer {
   background-color: rgba(205, 208, 212, 0.038);
-  margin-top: 300px;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +71,7 @@ footer .footer_container div li {
 
   .soMe_links {
     margin-left: 100px;
+    align-self: flex-end;
   }
 }
 
@@ -107,4 +108,16 @@ footer .footer_container div li {
   .soMe_links i {
     font-size: 30px;
   }
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1690px) {
+}
+
+@media screen and (min-width: 1720px) {
+}
+
+@media screen and (min-width: 1750px) {
 }

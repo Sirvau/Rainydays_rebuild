@@ -4,11 +4,14 @@
 #call_to_action {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+}
+
+#reseption {
+  justify-content: center;
 }
 
 #call_to_action {
+  flex-direction: column;
   box-shadow: 0px 1px rgba(205, 208, 212, 0.081);
   padding: 40px 0px;
 }
@@ -17,7 +20,7 @@
 
 .reseption_image {
   background-image: url(../images/index_reseption_image_copy.jpg);
-  height: 60vh;
+  height: 80vh;
 }
 
 .cta_image {
@@ -39,11 +42,15 @@
 .cta_text {
   text-align: center;
   line-height: 30px;
-  margin: auto;
+}
+
+.reseption_text {
+  align-self: center;
 }
 
 .cta_text {
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 h1,
@@ -54,7 +61,7 @@ h2,
 
 h1 {
   font-size: 45px;
-  border-bottom: 5px dotted #616834;
+  border-bottom: 5px dotted #61683490;
   line-height: 2px;
 }
 
@@ -73,21 +80,254 @@ h2 {
 }
 
 /* Media queries ------------------------------------------------------------------------------------------------------------------*/
+
 @media screen and (min-width: 480px) {
+  #reseption {
+    margin-bottom: 30px;
+  }
+
+  .text_wrap {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .reseption_image {
+    height: 60vh;
+  }
+
+  .cta_image {
+    height: 45vh;
+  }
+
+  #bottom_section_image {
+    height: 56vh;
+  }
+
+  .cta_button {
+    margin-top: 100px;
+  }
 }
+
 @media screen and (min-width: 540px) {
+  h1 {
+    letter-spacing: 3px;
+    font-size: 55px;
+  }
+
+  .text_wrap {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .reseption_text,
+  .cta_text {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .reseption_image {
+    height: 75vh;
+  }
+
+  .cta_image {
+    height: 50vh;
+  }
+
+  #bottom_section_image {
+    height: 62vh;
+  }
+
+  .cta_button {
+    margin-top: 120px;
+  }
 }
 @media screen and (min-width: 600px) {
+  .text_wrap {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .reseption_text,
+  .cta_text {
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 60px;
+    letter-spacing: 6px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
 }
+
 @media screen and (min-width: 768px) {
+  #reseption {
+    margin-top: 50px;
+    flex-direction: row;
+  }
+
+  .reseption_image {
+    height: 70vh;
+  }
+
+  .reseption_text {
+    width: 500px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .cta_image {
+    height: 50vh;
+    background-position-y: bottom;
+  }
+
+  .text_wrap {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  #bottom_section_image {
+    height: 70vh;
+  }
+
+  .cta_button {
+    padding: 24px 50px;
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
 }
+
 @media screen and (min-width: 880px) {
+  .reseption_text {
+    width: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .cta_image {
+    height: 60vh;
+  }
+
+  .text_wrap {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  #bottom_section_image {
+    height: 70vh;
+  }
+
+  .cta_button {
+    padding: 24px 50px;
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
 }
 @media screen and (min-width: 1024px) {
+  main {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  #bottom_section_image {
+    height: 55vh;
+  }
+
+  .reseption_image {
+    background-position-y: center;
+  }
+
+  .text_wrap {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
 }
+
 @media screen and (min-width: 1280px) {
+  main {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  #reseption {
+    box-shadow: 0px 1px rgba(205, 208, 212, 0.081);
+  }
+
+  .reseption_text {
+    width: 800px;
+    margin-left: 80px;
+    margin-right: 50px;
+  }
+
+  #call_to_action {
+    padding: 10px 0px;
+  }
+
+  .reseption_image {
+    height: 70vh;
+  }
+
+  .cta_image {
+    height: 65vh;
+  }
+
+  .bottom_section {
+    display: flex;
+  }
+
+  .bottom_section {
+    margin-top: 50px;
+  }
+
+  .text_wrap {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .cta_text {
+    align-self: center;
+  }
+
+  #bottom_section_image {
+    height: 60vh;
+    max-width: 500px;
+  }
+
+  .cta_button {
+    margin-top: 160px;
+  }
 }
+
 @media screen and (min-width: 1440px) {
+  main {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
 }
 @media screen and (min-width: 1690px) {
+  main {
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 1720px) {
+  main {
+    margin-right: 350px;
+    margin-left: 350px;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  main {
+    margin-right: 500px;
+    margin-left: 500px;
+  }
 }

@@ -52,6 +52,7 @@ footer,
   width: 100%;
   background-size: cover;
   margin: auto;
+  background-repeat: no-repeat;
 }
 
 .button {

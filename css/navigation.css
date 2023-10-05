@@ -181,7 +181,8 @@ li {
   #searchbar {
     font-size: 14px;
     letter-spacing: 1px;
-    border: 1px dotted rgba(205, 208, 212, 1);
+    border: 1px solid slategray;
+    height: 25px;
     border-radius: 3px;
     max-width: 150px;
     background-color: rgba(5, 19, 30, 1);
@@ -189,18 +190,31 @@ li {
   }
 }
 
-/* Tablet size ----------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 880px) {
-}
-@media screen and (min-width: 1024px) {
-}
 @media screen and (min-width: 1280px) {
+  .logo {
+    padding-left: 50px;
+    max-width: 250px;
+  }
 }
 @media screen and (min-width: 1440px) {
+  .logo {
+    padding-left: 100px;
+  }
 }
 @media screen and (min-width: 1690px) {
+  .logo {
+    padding-left: 200px;
+  }
+}
+
+@media screen and (min-width: 1720px) {
+  .logo {
+    padding-left: 350px;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .logo {
+    padding-left: 500px;
+  }
 }
