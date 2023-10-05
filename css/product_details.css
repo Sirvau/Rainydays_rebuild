@@ -65,6 +65,10 @@
   height: 55px;
 }
 
+#select_size {
+  margin-top: 7px;
+}
+
 label {
   display: none;
 }
