@@ -286,7 +286,6 @@ h2 {
   }
 
   #bottom_section_image {
-    height: 60vh;
     max-width: 500px;
   }
 
@@ -295,7 +294,24 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 2200px) {
+  .reseption_image {
+    height: 90vh;
+  }
+
+  .cta_image {
+    height: 70vh;
+  }
+
+  #bottom_section_image {
+    height: 60vh;
+    max-width: 700px;
+  }
 }
-@media screen and (min-width: 1690px) {
+
+@media screen and (min-width: 2400px) {
+  #bottom_section_image {
+    height: 70vh;
+    max-width: 900px;
+  }
 }

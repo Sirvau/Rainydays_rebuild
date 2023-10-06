@@ -212,3 +212,26 @@ li {
     padding-left: 200px;
   }
 }
+@media screen and (min-width: 1740px) {
+  .logo {
+    padding-left: 250px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .logo {
+    padding-left: 350px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .logo {
+    padding-left: 400px;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .logo {
+    padding-left: 450px;
+  }
+}

@@ -104,28 +104,40 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .product_image {
-    height: 32vh;
+    height: 26vh;
   }
 }
 @media screen and (min-width: 1440px) {
   .product_image {
-    height: 34vh;
+    height: 30vh;
   }
 }
 @media screen and (min-width: 1690px) {
   .product_image {
-    height: 38vh;
+    height: 32vh;
   }
 }
 
-@media screen and (min-width: 1720px) {
+@media screen and (min-width: 1740px) {
   .product_image {
-    height: 36vh;
+    height: 30vh;
   }
 }
 
-@media screen and (min-width: 1750px) {
+@media screen and (min-width: 1900px) {
   .product_image {
-    height: 38vh;
+    height: 26vh;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .product_image {
+    height: 28vh;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .product_image {
+    height: 30vh;
   }
 }
