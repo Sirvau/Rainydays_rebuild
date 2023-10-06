@@ -62,7 +62,7 @@ footer,
   letter-spacing: 1px;
 }
 
-.cta_button:hover {
+.button:hover {
   background-color: #e36242;
 }
 
@@ -70,8 +70,14 @@ footer,
 @media screen and (min-width: 480px) {
 }
 @media screen and (min-width: 540px) {
+  p {
+    font-size: 18px;
+  }
 }
 @media screen and (min-width: 600px) {
+  p {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
 }
