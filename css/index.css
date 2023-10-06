@@ -231,11 +231,6 @@ h2 {
   }
 }
 @media screen and (min-width: 1024px) {
-  main {
-    margin-right: 30px;
-    margin-left: 30px;
-  }
-
   #bottom_section_image {
     height: 55vh;
   }
@@ -251,11 +246,6 @@ h2 {
 }
 
 @media screen and (min-width: 1280px) {
-  main {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-
   #reseption {
     box-shadow: 0px 1px rgba(205, 208, 212, 0.081);
   }
@@ -306,28 +296,6 @@ h2 {
 }
 
 @media screen and (min-width: 1440px) {
-  main {
-    margin-right: 100px;
-    margin-left: 100px;
-  }
 }
 @media screen and (min-width: 1690px) {
-  main {
-    margin-right: 200px;
-    margin-left: 200px;
-  }
-}
-
-@media screen and (min-width: 1720px) {
-  main {
-    margin-right: 350px;
-    margin-left: 350px;
-  }
-}
-
-@media screen and (min-width: 1750px) {
-  main {
-    margin-right: 500px;
-    margin-left: 500px;
-  }
 }

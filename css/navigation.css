@@ -190,6 +190,12 @@ li {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .logo {
+    padding-left: 30px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .logo {
     padding-left: 50px;
@@ -204,17 +210,5 @@ li {
 @media screen and (min-width: 1690px) {
   .logo {
     padding-left: 200px;
-  }
-}
-
-@media screen and (min-width: 1720px) {
-  .logo {
-    padding-left: 350px;
-  }
-}
-
-@media screen and (min-width: 1750px) {
-  .logo {
-    padding-left: 500px;
   }
 }

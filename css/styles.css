@@ -78,10 +78,26 @@ footer,
 @media screen and (min-width: 880px) {
 }
 @media screen and (min-width: 1024px) {
+  main {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }
 @media screen and (min-width: 1280px) {
+  main {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }
 @media screen and (min-width: 1440px) {
+  main {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
 }
 @media screen and (min-width: 1690px) {
+  main {
+    margin-right: 200px;
+    margin-left: 200px;
+  }
 }
