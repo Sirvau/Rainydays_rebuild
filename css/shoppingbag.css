@@ -1,0 +1,278 @@
+.shoppingbag_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products_and_total_amount {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  box-shadow: 0px 1px rgba(205, 208, 212, 0.081);
+}
+
+.products_in_bag {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 20px 70px;
+  background-color: rgba(205, 208, 212, 0.038);
+}
+
+.product_image {
+  background-image: url(../images/ice_shell_jacket.png);
+  height: 30vh;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#quantity {
+  background-color: rgba(5, 19, 30, 1);
+  border: 2px solid rgba(205, 208, 212, 0.081);
+  border-radius: 6px;
+  font-size: 16px;
+  color: rgba(205, 208, 212, 1);
+  text-align: center;
+  width: 55px;
+  height: 45px;
+}
+
+.total_amount {
+  margin-top: 50px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+
+  margin-top: 100px;
+  letter-spacing: 4px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="adress"],
+input[type="text"],
+input[type="cardnumber"],
+input[type="cvc-code"],
+input[type="search"] select,
+textarea {
+  border-radius: 4px;
+  border: 1px solid slategrey;
+  color: rgba(205, 208, 212, 1);
+  font-size: 1.2rem;
+  background-color: rgba(5, 19, 30, 1);
+  letter-spacing: 0.05rem;
+  font-family: "Montserrat", "sans-serif", "verdana";
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="cvc-code"] {
+  width: 40px;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="adress"],
+input[type="cardnumber"],
+input[type="search"],
+textarea {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+fieldset {
+  margin-top: 30px;
+  margin-bottom: 3rem;
+  padding: 15px;
+  width: 280px;
+  border: 1px solid rgba(205, 208, 212, 0.038);
+  background-color: rgba(205, 208, 212, 0.038);
+}
+
+input[type="radio"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.5rem;
+}
+
+input[type="cvc-code"] {
+  margin-top: 3rem;
+}
+
+select {
+  width: 3.5rem;
+  height: 3rem;
+  margin: auto;
+  background-color: rgba(46, 47, 49, 0.25);
+  color: rgba(205, 208, 212, 1);
+  text-align: center;
+}
+
+.size {
+  margin: 2rem 0rem 2rem 3.5rem;
+}
+
+.payment {
+  margin: auto;
+  padding: 0.8rem;
+}
+
+#checkout_button {
+  background-color: #616834;
+  border: solid #494f27;
+  border-radius: 6px;
+  padding: 15px 40px;
+  margin: 50px 10px;
+  font-size: 25px;
+  align-self: center;
+}
+
+#checkout_button:hover {
+  background-color: #99a456;
+}
+
+@media screen and (min-width: 600px) {
+  .shoppingbag_page {
+    align-items: flex-start;
+  }
+
+  .products_in_bag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .product_image {
+    height: 15vh;
+  }
+
+  .product_name,
+  .quantity,
+  .price {
+    font-size: 12px;
+  }
+
+  fieldset {
+    padding: 20px 60px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shoppingbag_page {
+    align-items: center;
+  }
+
+  .products_in_bag {
+    width: 600px;
+  }
+
+  .product_image {
+    height: 16vh;
+  }
+
+  .product_name,
+  .quantity,
+  .price {
+    font-size: 14px;
+  }
+
+  fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .products_in_bag {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 22px;
+  }
+  .products_in_bag {
+    width: 800px;
+  }
+
+  .product_image {
+    height: 18vh;
+  }
+
+  .product_name,
+  .quantity,
+  .price {
+    font-size: 16px;
+  }
+
+  .information_and_payment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact_information,
+  .payment_methods {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products_in_bag {
+    width: 1100px;
+  }
+
+  .product_image {
+    height: 20vh;
+  }
+
+  .product_name,
+  .quantity,
+  .price {
+    font-size: 18px;
+  }
+  .contact_information,
+  .payment_methods {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1690px) {
+}
+
+@media screen and (min-width: 1720px) {
+}
+
+@media screen and (min-width: 1750px) {
+}

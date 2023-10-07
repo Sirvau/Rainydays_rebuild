@@ -17,7 +17,9 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script defer src="../js/styles.js" type="module"></script>
     <script defer src="../js/navigation.js" type="module"></script>
+    <script defer src="../js/contact.js" type="module"></script>
     <link rel="import" href="../html/common_resources.html" />
     <link href="../css/styles.css" rel="stylesheet" />
     <link href="../css/navigation.css" rel="stylesheet" />
@@ -58,11 +60,9 @@
         </button>
       </nav>
     </header>
-    <main class="contact_page">
-      <section class="container">
-        <div class="image_contact background_images"></div>
-      </section>
-      <section class="container">
+    <main class="contact_page wrapper">
+      <div class="image_contact background_images"></div>
+      <section class="contact_us_text">
         <h1>Contact us</h1>
         <p class="paragraph">If you have questions or feedback, let us know!</p>
       </section>
@@ -74,9 +74,9 @@
           <input type="email" name="email" />
           <label for="message">Your message</label>
           <textarea id="message" name="message" rows="5" cols="30"></textarea>
+          <button class="send_button button"></button>
         </fieldset>
-        <div class="button_small">
-          <a href="send_success.html">Send</a>
+          
         </div>
       </section>
     </main>

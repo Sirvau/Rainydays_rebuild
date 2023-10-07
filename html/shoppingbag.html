@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <script defer src="../js/navigation.js" type="module"></script>
+    <script defer src="../js/shoppingbag.js" type="module"></script>
     <link rel="import" href="../html/common_resources.html" />
     <link href="../css/styles.css" rel="stylesheet" />
     <link href="../css/navigation.css" rel="stylesheet" />
@@ -58,7 +59,93 @@
         </button>
       </nav>
     </header>
-    <main></main>
+    <main class="shoppingbag_page wrapper">
+      <h1>Shoppingbag</h1>
+      <section class="products_and_total_amount">
+        <div class="products_in_bag">
+          <div class="product_image"></div>
+          <p class="product_name">* Product name *</p>
+          <input id="quantity" type="number" value="1"></input>
+          <p class= "price">* Product price *</p>
+        </div>
+        <div class="products_in_bag">
+          <div class="product_image"></div>
+          <p class="product_name">* Product name *</p>
+          <input id="quantity" type="number" value="1"></input>
+          <p class= "price">* Product price *</p>
+        </div>
+        <div>
+          <h3 class="total_amount">Total amount : *  xxx  *</h3>
+        </div>
+      </section>
+      <section class="information_and_payment">
+        <div class="contact_information">
+          <h2>Your information</h2>
+          <fieldset class="costumer_information_fields">
+            <label for="name">Name, surname</label>
+            <input type="name" name="name_surname" required/>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required/>
+            <label for="adress">Delivery adress</label>
+            <input type="adress" name="adress" required/>
+            <label for="text">Postal code</label>
+            <input type="text" name="text" required/>
+            <div>
+            <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" cols="30"></textarea>
+          </fieldset>
+        </div>
+        <div class="payment_methods">
+          <h3>Choose payment method</h3>
+          <fieldset>
+            <div class="payment">
+              <span class="fa fa-cc-visa"></span>
+              <input type="radio" name="payment" value="visa" id="visa" />
+              <label for="visa">Visa</label>
+            </div>
+            <div class="payment">
+              <span class="fa fa-cc-paypal"></span>
+              <input type="radio" name="payment" value="paypal" id="paypal" />
+              <label for="paypal">Paypal</label>
+            </div>
+            <div class="payment">
+              <span class="fa fa-cc-mastercard"></span>
+              <input
+                type="radio"
+                name="payment"
+                value="mastercard"
+                id="mastercard"
+              />
+              <label for="mastercard">Mastercard</label>
+            </div>
+            <div class="payment">
+              <span class="fa fa-cc-discover"></i></span>
+              <input
+                type="radio"
+                name="payment"
+                value="discover"
+                id="discover"
+              />
+              <label for="discover">Discover</label>
+            </div>
+            <div>
+              <label for="cvc-code">CVC-code</label>
+              <input type="cvc-code" name="cvc-code" required/>
+            </div>
+            <div>
+              <label for="cardnumber">Cardnumber</label>
+              <input type="cardnumber" name="cardnumber" required/>
+            </div>
+          </fieldset>
+          <button id="checkout_button" class= "button">#</button>
+        </div>
+      
+         
+       
+        
+      </section>
+    </main>
+
     <footer>
       <div class="footer_container">
         <div class="contact_info">
