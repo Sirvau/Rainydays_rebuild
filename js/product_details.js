@@ -53,14 +53,7 @@ async function fetchJacketDetail() {
         option.textContent = size;
         selectElement.appendChild(option);
 })
-        const button = document.querySelector(".add_to_bag");
-        button.href = "/html/shoppingbag.html;"
-        button.textContent = "Add to bag";
-
-        button.addEventListener("click", () => {
-            window.location.href="/html/shoppingbag.html";
-        });
-
+       
     }
     catch (error) {
         showError(error.message);
@@ -71,3 +64,10 @@ async function fetchJacketDetail() {
 fetchJacketDetail()
 
 
+const button = document.querySelector(".add_to_bag");
+button.href = "/html/shoppingbag.html;"
+button.textContent = "Add to bag";
+
+button.addEventListener("click", () => {
+    window.location.href="/html/shoppingbag.html";
+});
