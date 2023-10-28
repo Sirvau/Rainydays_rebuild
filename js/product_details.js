@@ -43,7 +43,7 @@ async function fetchJacketDetail() {
         descriptionOfJacket.innerHTML = `${jacketDetail.description}`;
 
         const priceOfJacket = document.querySelector(".product_price");
-        priceOfJacket.innerHTML = `<span class="product_price">$  ${jacketDetail.prices[0].price}</span>`;
+        priceOfJacket.innerHTML = `<span class="product_price">$  ${jacketDetail.prices.price}</span>`;
 
         const sizesArray = jacketDetail.sizes;
         const selectElement = document.getElementById("select_size");

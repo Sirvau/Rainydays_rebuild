@@ -31,7 +31,7 @@ async function displayProducts(){
         const jacketPrice = document.createElement("p");
         jacketPrice.classList.add("product_price");
 
-        jacketPrice.innerHTML = `<span class="product_price">$  ${jacket.prices[0].price}</span>`;
+        jacketPrice.innerHTML = `<span class="product_price">$  ${jacket.prices.price}</span>`;
 
         const jacketDetails = document.createElement("a");
         jacketDetails.classList.add("jacketDetails");
@@ -39,8 +39,8 @@ async function displayProducts(){
         window.location.href = `../html/product_details.html?id=${jacket.id}&title=${jacket.name}`;            
         });
 
-        if (jacket.onSale) {
-            jacketPrice.innerHTML = `<span class="jacketSale">$ ${jacket.prices[0].sale_price} </span><span class="product_price on_sale">$ ${jacket.prices[0].regular_price} </span>`;
+        if (jacket.on_sale) {
+            jacketPrice.innerHTML = `<span class="jacketSale">$ ${jacket.prices.sale_price} </span><span class="product_price on_sale">$ ${jacket.prices.regular_price} </span>`;
             }
 
             
