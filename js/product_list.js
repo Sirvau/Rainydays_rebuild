@@ -21,26 +21,26 @@ async function displayProducts(){
 
         const image = document.createElement("img");
         image.classList.add("product_image");
-        image.src = jacket.image;
-        image.alt = jacket.description;
+        image.src = jacket.images[0].src;
+        image.alt = jacket.short_description;
 
         const jacketTitle = document.createElement("h2");
         jacketTitle.classList.add("product_name");
-        jacketTitle.innerHTML = `${jacket.title}`
+        jacketTitle.innerHTML = `${jacket.name}`
 
         const jacketPrice = document.createElement("p");
         jacketPrice.classList.add("product_price");
 
-        jacketPrice.innerHTML = `<span class="product_price">$  ${jacket.price}</span>`;
+        jacketPrice.innerHTML = `<span class="product_price">$  ${jacket.prices[0].price}</span>`;
 
         const jacketDetails = document.createElement("a");
         jacketDetails.classList.add("jacketDetails");
         jacketDetails.addEventListener("click", () => {
-        window.location.href = `../html/product_details.html?id=${jacket.id}&title=${jacket.title}`;            
+        window.location.href = `../html/product_details.html?id=${jacket.id}&title=${jacket.name}`;            
         });
 
         if (jacket.onSale) {
-            jacketPrice.innerHTML = `<span class="jacketSale">$ ${jacket.discountedPrice} </span><span class="product_price on_sale">$ ${jacket.price} </span>`;
+            jacketPrice.innerHTML = `<span class="jacketSale">$ ${jacket.prices[0].sale_price} </span><span class="product_price on_sale">$ ${jacket.prices[0].regular_price} </span>`;
             }
 
             
@@ -50,7 +50,7 @@ async function displayProducts(){
 
             const buttonLink = document.createElement("a");
             buttonLink.classList.add("button_link");
-            buttonLink.href = `../html/product_details.html?id=${jacket.id}&title=${jacket.title}`; 
+            buttonLink.href = `../html/product_details.html?id=${jacket.id}&title=${jacket.name}`; 
             buttonLink.textContent = "View";
 
             jacketsContainer.appendChild(jacketDiv);

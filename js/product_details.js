@@ -23,7 +23,7 @@ async function fetchJacketDetail() {
 
     try { 
 
-        const response = await fetch(`https://api.noroff.dev/api/v1/rainy-days/${jacketId}`);
+        const response = await fetch(`https://www.siril-vaular.no/wp-json/wc/store/products/${jacketId}`);
         
         if(!response.ok) {
             throw new Error("Unfortunately an error occured when loading the jacket");
@@ -33,17 +33,17 @@ async function fetchJacketDetail() {
 
 
         const productDetailImage = document.querySelector(".product_detail_image");
-        productDetailImage.src = jacketDetail.image;
-        productDetailImage.alt = jacketDetail.description;
+        productDetailImage.src = jacketDetail.images[0].src;
+        productDetailImage.alt = jacketDetail.short_description;
 
         const titleOfJacket = document.querySelector(".product_name");
-        titleOfJacket.innerHTML = `${jacketDetail.title}`;
+        titleOfJacket.innerHTML = `${jacketDetail.name}`;
 
         const descriptionOfJacket = document.querySelector(".product_description");
         descriptionOfJacket.innerHTML = `${jacketDetail.description}`;
 
         const priceOfJacket = document.querySelector(".product_price");
-        priceOfJacket.innerHTML = `<span class="product_price">$  ${jacketDetail.price}</span>`;
+        priceOfJacket.innerHTML = `<span class="product_price">$  ${jacketDetail.prices[0].price}</span>`;
 
         const sizesArray = jacketDetail.sizes;
         const selectElement = document.getElementById("select_size");

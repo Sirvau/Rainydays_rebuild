@@ -3,7 +3,7 @@ import {showError} from "./display_message.js";
 import { showLoadingIndicator } from "./display_message.js";
 
 
-const apiAllProducts = "https://api.noroff.dev/api/v1/rainy-days";
+const apiAllProducts = "https://www.siril-vaular.no/wp-json/wc/store/products";
 
 
 
