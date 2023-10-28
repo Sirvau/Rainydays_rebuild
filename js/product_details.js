@@ -65,9 +65,13 @@ fetchJacketDetail()
 
 
 const button = document.querySelector(".add_to_bag");
-button.href = "/html/shoppingbag.html;"
+button.classList.add="add_to_bag button";
+button.href = "/html/shoppingbag;"
 button.textContent = "Add to bag";
 
 button.addEventListener("click", () => {
-    window.location.href="/html/shoppingbag.html";
+    window.location.href="/html/shoppingbag";
 });
+
+
+
