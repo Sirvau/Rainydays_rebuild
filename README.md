@@ -16,12 +16,12 @@ The content of the website is going to:
 - Give insight about Rainydays as a company and how it started.
 - Display contact information.
 
-Technical aspects of the blog:
+Technical aspects of the website:
 
 - Responsive website.
 - Intuitive and easy to navigate on various devices.
 - Contact form on contact page.
-- Products with information fetched trough API and displayed on products site and product specific site.
+- Products with information fetched trough a WordPress API and displayed on products site and product specific site.
 
 ## Built With
 
