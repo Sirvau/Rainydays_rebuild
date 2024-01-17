@@ -1,4 +1,4 @@
-# Project Exam 1
+# Cross course project - Rainydays
 
 ![Alt text](<images/Skjermbilde 2023-12-07 204033.png>)
 
